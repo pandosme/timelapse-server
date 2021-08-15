@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nodered:
+    container_name: timelapse
+    restart: always
+    image: nodered/node-red
+    user: '0'    
+    ports:
+      - '9088:1880'
+    volumes:
+      - ./nodered:/data
+    environment:
+      - TZ=Europe/Stockholm

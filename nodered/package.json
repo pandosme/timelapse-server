@@ -1,0 +1,18 @@
+{
+    "name": "node-red-timelapse",
+    "description": "Timelapse server for Axis Cameras",
+    "version": "1.0.0",
+    "private": true,
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    },
+    "dependencies": {
+        "node-red-dashboard": "2.30.0",
+        "node-red-node-base64": "0.3.0",
+        "node-red-node-ui-table": "0.3.11",
+        "node-red-contrib-axis-device": "1.2.6"
+    }
+}
