@@ -6,9 +6,13 @@ nodered/context/
 nodered/flows_cred.json
 nodered/settings.js.org
 nodered/settings.js.save
+nodered/.config.modules.json
+nodered/.config.nodes.json
+nodered/.config.nodes.json.backup
+nodered/.config.runtime.json
+nodered/.config.runtime.json.backup
 
-# Logs
-logs
+#logs
 *.log
 npm-debug.log*
 yarn-debug.log*
