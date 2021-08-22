@@ -4,13 +4,12 @@ nodered/.flows_cred.json.backup
 nodered/.sessions.json
 nodered/context/
 nodered/flows_cred.json
-nodered/settings.js.org
-nodered/settings.js.save
 nodered/.config.modules.json
 nodered/.config.nodes.json
 nodered/.config.nodes.json.backup
 nodered/.config.runtime.json
 nodered/.config.runtime.json.backup
+nodered/.config.users.json
 
 #logs
 *.log
