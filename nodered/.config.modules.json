@@ -1,8 +1,0 @@
-{
-    "fs-extra": {
-        "spec": "fs-extra",
-        "module": "fs-extra",
-        "builtin": false,
-        "known": false
-    }
-}
