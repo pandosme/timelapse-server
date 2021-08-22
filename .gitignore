@@ -1,3 +1,12 @@
+nodered/.config.projects.json
+nodered/.flows.json.backup
+nodered/.flows_cred.json.backup
+nodered/.sessions.json
+nodered/context/
+nodered/flows_cred.json
+nodered/settings.js.org
+nodered/settings.js.save
+
 # Logs
 logs
 *.log
