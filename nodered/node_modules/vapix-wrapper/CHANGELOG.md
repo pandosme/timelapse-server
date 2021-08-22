@@ -1,3 +1,6 @@
+## 1.2.5
+- Fixed flaw in firmware update when injecting a firmware as buffer
+
 ## 1.2.4
 - Fixed flaw in Get param to manage #error respons from Axis device in param listing
 

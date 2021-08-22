@@ -1,7 +1,7 @@
 {
     "node-red": {
         "name": "node-red",
-        "version": "2.0.4",
+        "version": "2.0.5",
         "local": false,
         "user": false,
         "nodes": {
@@ -664,7 +664,7 @@
     },
     "node-red-contrib-axis-device": {
         "name": "node-red-contrib-axis-device",
-        "version": "1.2.6",
+        "version": "1.2.7",
         "local": true,
         "user": true,
         "nodes": {

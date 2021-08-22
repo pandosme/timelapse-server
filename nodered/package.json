@@ -10,9 +10,10 @@
         }
     },
     "dependencies": {
-        "node-red-dashboard": "2.30.0",
-        "node-red-node-base64": "0.3.0",
-        "node-red-node-ui-table": "0.3.11",
-        "node-red-contrib-axis-device": "1.2.6"
+        "node-red-contrib-axis-device": "^1.2.7",
+        "node-red-contrib-friendly-id": "~0.2.1",
+        "node-red-dashboard": "^2.30.0",
+        "node-red-node-base64": "^0.3.0",
+        "node-red-node-ui-table": "^0.3.11"
     }
 }

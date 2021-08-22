@@ -467,7 +467,7 @@ exports.Upload_Firmare = function( device , options, callback ) {
 //	console.log("Firmware upgrade.");
 	
 	if( Buffer.isBuffer(options)  ) {
-		VapixDigest.upload( device, "firmware", "firmware.bin", options, function( error, response) {
+		VapixDigest.upload( device, "firmware", "firmware.bin", null, options, function( error, response) {
 			callback( error, response );
 		});
 		return;

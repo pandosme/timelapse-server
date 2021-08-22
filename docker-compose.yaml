@@ -6,8 +6,9 @@ services:
     image: nodered/node-red
     user: '0'    
     ports:
-      - '9088:1880'
+      - '9008:1880'
     volumes:
       - ./nodered:/data
+      - ./recordings:/recordings
     environment:
       - TZ=Europe/Stockholm

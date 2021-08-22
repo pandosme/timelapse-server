@@ -664,7 +664,7 @@
     },
     "node-red-contrib-axis-device": {
         "name": "node-red-contrib-axis-device",
-        "version": "1.2.6",
+        "version": "1.2.7",
         "local": true,
         "user": true,
         "nodes": {
@@ -719,6 +719,25 @@
                 "user": false,
                 "module": "node-red-node-ui-table",
                 "file": "/data/node_modules/node-red-node-ui-table/node.js"
+            }
+        }
+    },
+    "node-red-contrib-friendly-id": {
+        "name": "node-red-contrib-friendly-id",
+        "version": "0.2.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "friendly-id": {
+                "name": "friendly-id",
+                "types": [
+                    "friendly-id"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-friendly-id",
+                "file": "/data/node_modules/node-red-contrib-friendly-id/node/friendlyid.js"
             }
         }
     }
