@@ -16,8 +16,7 @@ A Timelapse-Server for xis Cameras based on Node-RED and ffmpeg.  Supports both 
 git clone git@github.com:pandosme/timelapse-server.git
 ```
 4. Start and Stop Node-RED to test everything is working.
-5. Edit .node-red/settings.js:
-   * Add/enable static route
+5. Edit .node-red/settings.js.  Find the line with httpStatic, remove comments and add route
 ```
 httpSatic: [
    {path: 'timelapse/recordings/', root: "/recordings/"}
@@ -38,4 +37,8 @@ cd ..
 ```
 sudo apt install ffmpeg
 ```
-9. Start Node-RED
+9. Start Node-RED and got to the Dashboard
+
+   
+
+
