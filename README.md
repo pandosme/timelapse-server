@@ -3,7 +3,14 @@ Timelapse-Server
 
 ### About
 
-A Timelapse-Server for xis Cameras based on Node-RED and ffmpeg.  Supports both local cameras (pull images) and remote cameras (push).
+A Timelapse-Server for Axis Cameras based on Node-RED and ffmpeg.  Supports both local cameras (pull images) and remote cameras (push).  
+The dashboard provides all functionality:
+* Create a new Timelapse recording with various triggers and filters
+* View status of all on-going recordings
+* Edit timelpase configurations
+* Generate MP4 video
+* Download MP4 video
+* Inspect frames for individuals cameras/captures
 
 ### Pre-requisite
 * Axis Cameras
