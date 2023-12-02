@@ -11,10 +11,10 @@ A Timelapse-Server for xis Cameras based on Node-RED and ffmpeg.  Supports both 
 3. Edit .node-red/settings.js:
    * Add/enable static route
    ``` Hello ```  
-   ```httpSatic: [
+   ```httpSatic: \[
    
         {path: 'timelapse/recordings/', root: "/recordings/"}
    
-    ],```
+    \],```
 `
 
