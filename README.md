@@ -1,7 +1,7 @@
 Timelapse-Server
 ================
 
-Collects images from Axis cameras and stores them in directories and users can generate MP4 video at user-configurable fram rates.
+Collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable fram rates.
 
 Common use cases:
 * Construction site progress.  Typically capturing one image every day at sun noon.
