@@ -12,6 +12,7 @@ Features:
 * Web-based dashboard
 * Supports both local cameras (pull images) and remote cameras (push).
 * User-selectable image capture triggers
+* Condition filers to limit image capturing only between sunrise and sunset, between dawn and dusk or office hours
 * View status of all on-going recordings
 * Inspect frames in timelapse
 * Generate MP4 video
@@ -49,8 +50,29 @@ cd ..
 ```
 sudo apt install ffmpeg
 ```
-9. Start Node-RED and got to the Dashboard
+9. Start Node-RED and go to the Dashboard on address ```http://server-address:1880/ui```
+The flows can be inspected and modified on ```http://server-address:1880```
 
-   
+## Timelapse configuration
+### Local cameras
+If the server can access a camera, create a new Timelapse, set trigger, camera address, user and password
+
+### Remote cameras (and custom triggers)
+If the server cannot reach the camera but the camera can reach the server, create a timelapse with trigger "HTTP".  This creates an end-point e.g. "/timelapse/RCNACUGA" that a camera can push images to.
+1. In the cameras under System | Events, create a new HTTP recipient with the address ```https:/server-address:1880/timelapse/RCNACUGA```
+2. Create an HTTP upload event based on some trigger available in the camera and user the recipient previously created.
+IMPORTANT!  Set "Maximum images" to 1
+
+## Gnerate MP4
+1. Select a timelapse in the table
+2. On the right side, click "Generate MP4".
+MP4 generation may take some time based on the image size, number of frames and what hardware the server runs on.
+3. In the table under MP4 there a ling with todays date will appear.  Use that link to play the vide or for download.  The link can be sent to other that can access the server.
+
+## Security
+If the server is exposed to to Internet it is recommeded to add authentication for the flows, dashboard.
+You must generae password hashes and edit the file ```.node-red/settings.js```.
+[Read more on Securing Node-RED](https://nodered.org/docs/user-guide/runtime/securing-node-red)
+
 
 
