@@ -63,7 +63,7 @@ If the server cannot reach the camera but the camera can reach the server, creat
 2. Create an HTTP upload event based on some trigger available in the camera and user the recipient previously created.
 IMPORTANT!  Set "Maximum images" to 1
 
-## Gnerate MP4
+## Generate and play MP4
 1. Select a timelapse in the table
 2. On the right side, click "Generate MP4".
 MP4 generation may take some time based on the image size, number of frames and what hardware the server runs on.
