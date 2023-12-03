@@ -1,16 +1,21 @@
 Timelapse-Server
 ================
 
-### About
+Collects images from Axis cameras and stores them in directories and users can generate MP4 video at user-configurable fram rates.
 
-A Timelapse-Server for Axis Cameras based on Node-RED and ffmpeg.  Supports both local cameras (pull images) and remote cameras (push).  
-The dashboard provides all functionality:
-* Create a new Timelapse recording with various triggers and filters
+Common use cases:
+* Construction site progress.  Typically capturing one image every day at sun noon.
+* Monitor slow changes for outdoor seasonas, warehouse stock or rooms.  Typically capturing images based on a timer. 
+* Forensic search.  Typically capturing images on motion detection.
+
+Features:
+* Web-based dashboard
+* Supports both local cameras (pull images) and remote cameras (push).
+* User-selectable image capture triggers
 * View status of all on-going recordings
-* Edit timelpase configurations
+* Inspect frames in timelapse
 * Generate MP4 video
 * Download MP4 video
-* Inspect frames for individuals cameras/captures
 
 ### Pre-requisite
 * Axis Cameras
