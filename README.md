@@ -6,7 +6,7 @@ Collects images from Axis cameras and stores them in directories so user can gen
 Common use cases:
 * Construction site progress.  Typically capturing one image every day at sun noon.
 * Monitor slow changes for outdoor seasonas, warehouse stock or rooms.  Typically capturing images based on a timer. 
-* Forensic search.  Typically capturing images on motion detection.
+* Forensic search.  Typically capturing images on motion detection.  Images are stored in ~/timlapse/images and recordins are stored in ~/timelapase/recordings.
 
 Features:
 * Web-based dashboard
