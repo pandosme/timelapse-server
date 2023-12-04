@@ -1,12 +1,12 @@
 Timelapse-Server
 ================
 
-Collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable fram rates.
+Collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable fram rates.  Images are stored in driectory ~/timlapse/images and recordings are stored in directory ~/timelapase/recordings.
 
 Common use cases:
 * Construction site progress.  Typically capturing one image every day at sun noon.
 * Monitor slow changes for outdoor seasonas, warehouse stock or rooms.  Typically capturing images based on a timer. 
-* Forensic search.  Typically capturing images on motion detection.  Images are stored in ~/timlapse/images and recordins are stored in ~/timelapase/recordings.
+* Forensic search.  Typically capturing images on motion detection.  
 
 Features:
 * Web-based dashboard
