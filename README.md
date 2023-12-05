@@ -11,6 +11,7 @@ Features:
 * Web-based dashboard
 * Supports both local cameras (pull images) and remote cameras (push images).
 * User-selectable image capture triggers
+* Set GPS location to generate Sun noon event to be used as trigger.
 * Condition filters to limit image capturing only between sunrise and sunset, between dawn and dusk or during office hours
 * View status of all ongoing recordings
 * Inspect frames in timelapse
