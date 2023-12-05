@@ -1,19 +1,18 @@
 Timelapse-Server
 ================
-
-Collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable fram rates.  Images are stored in driectory ~/timlapse/images and recordings are stored in directory ~/timelapase/recordings.
+The [Timelapse ACAP](https://pandosme.github.io/acap/2020/01/01/timelapse.html) makes it easy to create timelapse videosin an Axis camera.  A server-based solution may be better solution if you have many cameras .  The timelapse-server collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable frame rates.
 
 Common use cases:
 * Construction site progress.  Typically capturing one image every day at sun noon.
-* Monitor slow changes for outdoor seasonas, warehouse stock or rooms.  Typically capturing images based on a timer. 
+* Monitor slow changes for outdoor seasonal, warehouse stock or rooms.  Typically capturing images based on a timer. 
 * Forensic search.  Typically capturing images on motion detection.  
 
 Features:
 * Web-based dashboard
-* Supports both local cameras (pull images) and remote cameras (push).
+* Supports both local cameras (pull images) and remote cameras (push images).
 * User-selectable image capture triggers
-* Condition filers to limit image capturing only between sunrise and sunset, between dawn and dusk or office hours
-* View status of all on-going recordings
+* Condition filters to limit image capturing only between sunrise and sunset, between dawn and dusk or during office hours
+* View status of all ongoing recordings
 * Inspect frames in timelapse
 * Generate MP4 video
 * Download MP4 video
@@ -29,7 +28,7 @@ Features:
 git clone git@github.com:pandosme/timelapse-server.git
 ```
 4. Start and Stop Node-RED to test everything is working.
-5. Edit .node-red/settings.js.  Find the line with httpStatic, remove comments and add route
+5. Edit .node-red/settings.js.  Find the line with httpStatic, remove comments, and add route.
 ```
 httpSatic: [
    {path: 'timelapse/recordings/', root: "/recordings/"}
@@ -58,7 +57,7 @@ The flows can be inspected and modified on ```http://server-address:1880```
 If the server can access a camera, create a new Timelapse, set trigger, camera address, user and password
 
 ### Remote cameras (and custom triggers)
-If the server cannot reach the camera but the camera can reach the server, create a timelapse with trigger "HTTP".  This creates an end-point e.g. "/timelapse/RCNACUGA" that a camera can push images to.
+If the server cannot reach the camera but the camera can reach the server, create a timelapse with trigger "HTTP".  This creates an HTTP endpoint e.g. "/timelapse/RCNACUGA" that a camera can push images to.
 1. In the cameras under System | Events, create a new HTTP recipient with the address ```https:/server-address:1880/timelapse/RCNACUGA```
 2. Create an HTTP upload event based on some trigger available in the camera and user the recipient previously created.
 IMPORTANT!  Set "Maximum images" to 1
@@ -67,10 +66,10 @@ IMPORTANT!  Set "Maximum images" to 1
 1. Select a timelapse in the table
 2. On the right side, click "Generate MP4".
 MP4 generation may take some time based on the image size, number of frames and what hardware the server runs on.
-3. In the table under MP4 there a ling with todays date will appear.  Use that link to play the vide or for download.  The link can be sent to other that can access the server.
+3. In the table in column MP4, a link with a date will appear.  Use this link to play the video or download.  The link can be shared to others that has access the server.
 
 ## Security
-If the server is exposed to to Internet it is recommeded to add authentication for the flows, dashboard.
+If the server is exposed to Internet it is recommended to add authentication for the flows, dashboard.
 You must generae password hashes and edit the file ```.node-red/settings.js```.
 [Read more on Securing Node-RED](https://nodered.org/docs/user-guide/runtime/securing-node-red)
 
