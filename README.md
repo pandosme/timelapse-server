@@ -1,6 +1,6 @@
 Timelapse-Server
 ================
-The [Timelapse ACAP](https://pandosme.github.io/acap/2020/01/01/timelapse.html) makes it easy to create timelapse videosin an Axis camera.  A server-based solution may be better solution if you have many cameras .  The timelapse-server collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable frame rates.
+The [Timelapse ACAP](https://pandosme.github.io/acap/2020/01/01/timelapse.html) makes it easy to create timelapse videos using Axis camera.  A server-based solution may be better solution if you have many cameras .  The timelapse-server collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable frame rates.
 
 Common use cases:
 * Construction site progress.  Typically capturing one image every day at sun noon.
