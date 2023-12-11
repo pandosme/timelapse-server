@@ -26,7 +26,7 @@ Features:
 1. Install [Node-RED](https://nodered.org/#get-started) on your Linux server.
 2. Clone repository in your home directory
 ```
-git clone git@github.com:pandosme/timelapse-server.git
+git clone https://github.com/pandosme/timelapse-server.git
 ```
 4. Start and Stop Node-RED to test everything is working.
 5. Edit .node-red/settings.js.  Find the line with httpStatic, remove comments, and add route.
