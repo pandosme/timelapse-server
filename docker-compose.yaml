@@ -1,0 +1,13 @@
+version: '3'
+services:
+  timelapse:
+    image: fredjuhlin/timelapse-server
+    container_name: timelapse-server
+    user: "0"
+    ports:
+      - "8100:1880"
+    restart: always
+    environment:
+      - TZ=Europe/Stockholm
+    volumes:
+      - ./timelapse:/data/timelapse
