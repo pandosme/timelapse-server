@@ -18,40 +18,30 @@ Features:
 * Generate MP4 video
 * Download MP4 video
 
+### Description
+Timelapse-server is a container-based application on Node-RED and ffmpeg.  It provides a user dashboard to create, modify and download timelapse recordings.
+
 ### Pre-requisite
 * Axis Cameras
-* Linux server with GIT installed
+* Linux server with [Docker](https://docs.docker.com/engine/install/ubuntu/) and [GIT](https://git-scm.com/download/linux) installed
 
 ### Installation
-1. Install [Node-RED](https://nodered.org/#get-started) on your Linux server.
-2. Clone repository in your home directory
-```
-git clone https://github.com/pandosme/timelapse-server.git
-```
-4. Start and Stop Node-RED to test everything is working.
-5. Edit .node-red/settings.js.  Find the line with httpStatic, remove comments, and add route.
-```
-httpSatic: [
-   {path: 'timelapse/recordings/', root: "/recordings/"}
-],
-```
-5. Copy flow.json and package.json to your .node-red directory
-```
-cp ~/timelapse-server/flow.json ~/.node-red
-cp ~/timelapse-server/package.json ~/.node-red
-```
-7. Install all required packages
-```
-cd .node-red
-npm install
-cd ..
-```
-8. Install ffmpeg
-```
-sudo apt install ffmpeg
-```
-9. Start Node-RED and go to the Dashboard on address ```http://server-address:1880/ui```
-The flows can be inspected and modified on ```http://server-address:1880```
+1. ```git clone https://github.com/pandosme/timelapse-server.git```
+2. ```cd timelapse-server```
+3. ```docker compose up -d```
+4. Web browser go to ```htto://server-ip:8100```
+
+To stop the container
+1. ```cd timelapse-server```
+2. ```docker compose down```
+
+### Customization
+You may need to adjust the docker-compose.yaml file to set your timezone and what port it uses (if you have port collision on 8100).
+1. ```cd timelapse-server```
+2. Stop the container if it is running
+3. ```nano docker-compose.yaml```
+4. When done, press ctrl-s and then ctrl-x
+5. Start the container
 
 ## Timelapse configuration
 ### Local cameras
