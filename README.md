@@ -43,6 +43,8 @@ You may need to adjust the docker-compose.yaml file to set your timezone and wha
 4. When done, press ctrl-s and then ctrl-x
 5. Start the container
 
+You can access the Node-RED flows to inspect or make changes ```http://server-ip:8100/admin```.  Note that changes may not be persistent when restarting the container.
+
 ## Timelapse configuration
 ### Local cameras
 If the server can access a camera, create a new Timelapse, set trigger, camera address, user and password
