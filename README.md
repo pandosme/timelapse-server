@@ -15,8 +15,7 @@ Features:
 * Condition filters to limit image capturing only between sunrise and sunset, between dawn and dusk or during office hours
 * View status of all ongoing recordings
 * Inspect frames in timelapse
-* Generate MP4 video
-* Download MP4 video
+* Generate, play and download MP4 videos
 
 ### Description
 Timelapse-server is a container-based application on Node-RED and ffmpeg.  It provides a user dashboard to create, modify and download timelapse recordings.
