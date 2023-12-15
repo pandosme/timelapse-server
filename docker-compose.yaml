@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   timelapse:
     image: fredjuhlin/timelapse-server
@@ -11,3 +12,6 @@ services:
       - TZ=Europe/Stockholm
     volumes:
       - ./timelapse:/data/timelapse
+      - timelapse-data:/data
+volumes:
+    timelapse-data:
