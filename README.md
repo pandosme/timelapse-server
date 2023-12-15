@@ -29,7 +29,7 @@ Timelapse-server is a container-based application on Node-RED and ffmpeg.  It pr
 1. ```git clone https://github.com/pandosme/timelapse-server.git```
 2. ```cd timelapse-server```
 3. ```docker compose up -d```
-4. Web browser go to ```htto://server-ip:8100```
+4. Web browser go to ```http://server-ip:8100```
 
 To stop the container
 1. ```cd timelapse-server```
