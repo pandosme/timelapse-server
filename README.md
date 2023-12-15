@@ -62,6 +62,4 @@ MP4 generation may take some time based on the image size, number of frames and 
 3. In the table in column MP4, a link with a date will appear.  Use this link to play the video or download.  The link can be shared to others that has access the server.
 
 ## Security
-If the server is exposed to Internet it is recommended to add authentication for the flows, dashboard.
-You must generae password hashes and edit the file ```.node-red/settings.js```.
-[Read more on Securing Node-RED](https://nodered.org/docs/user-guide/runtime/securing-node-red)
+Note that Timelapse-server does not provide any authentication.  Anyone with network access to the server can access the dashboard and flows.  It is NOT recommeded to expose the server to Internet.  It is possible to add authentication and additional securty if needed.  In this cases you are welcome to reach out.
