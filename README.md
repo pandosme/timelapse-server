@@ -1,6 +1,6 @@
 Timelapse-Server
 ================
-The [Timelapse ACAP](https://pandosme.github.io/acap/2020/01/01/timelapse.html) makes it easy to create timelapse videos using Axis camera.  A server-based solution may be better solution if you have many cameras .  The timelapse-server collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable frame rates.
+The [Timelapse ACAP](https://pandosme.github.io/acap/2020/01/01/timelapse.html) makes it easy to create timelapse videos using Axis camera.  A server-based solution may be a more suitable solution if you want a centralized interface for multiple cameras.  The timelapse-server collects images from Axis cameras and stores them in directories so user can generate and play MP4 video at configurable frame rates.  The Timelapse-server does not need any ACAP installed on the device.
 
 Common use cases:
 * Construction site progress.  Typically capturing one image every day at sun noon.
@@ -63,6 +63,3 @@ MP4 generation may take some time based on the image size, number of frames and 
 If the server is exposed to Internet it is recommended to add authentication for the flows, dashboard.
 You must generae password hashes and edit the file ```.node-red/settings.js```.
 [Read more on Securing Node-RED](https://nodered.org/docs/user-guide/runtime/securing-node-red)
-
-
-
